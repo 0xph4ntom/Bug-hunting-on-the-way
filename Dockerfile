@@ -6,8 +6,8 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 # Working Directory
 WORKDIR /root
-RUN mkdir -o /root/tools && \ 
-    mkdir -o  /root/wordlists
+RUN mkdir /root/tools && \ 
+    mkdir /root/wordlists
 
 # Install basic utilities
 RUN apt update && apt upgrade -y
